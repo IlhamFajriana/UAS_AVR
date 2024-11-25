@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/ar.js/aframe/build/aframe-ar.min.js"></script>
+  <title>AR Tata Surya dengan Model 3D</title>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs>
+    
+    <!-- Merkurius -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/mercury.glb"
+                scale="0.5 0.5 0.5"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+      </a-entity>
+      <a-entity text="value: Merkurius; color: white; align: center" 
+                position="0 0.8 0"></a-entity>
+    </a-marker>
+    
+    <!-- Venus -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/venus.glb"
+                scale="0.6 0.6 0.6"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 12000">
+      </a-entity>
+      <a-entity text="value: Venus; color: white; align: center" 
+                position="0 0.8 0"></a-entity>
+    </a-marker>
+    
+    <!-- Bumi -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/earth.glb"
+                scale="0.7 0.7 0.7"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 15000">
+      </a-entity>
+      <a-entity text="value: Bumi; color: white; align: center" 
+                position="0 0.8 0"></a-entity>
+    </a-marker>
+    
+    <!-- Mars -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/mars.glb"
+                scale="0.5 0.5 0.5"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 17000">
+      </a-entity>
+      <a-entity text="value: Mars; color: white; align: center" 
+                position="0 0.8 0"></a-entity>
+    </a-marker>
+    
+    <!-- Jupiter -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/jupiter.glb"
+                scale="1.5 1.5 1.5"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+      </a-entity>
+      <a-entity text="value: Jupiter; color: white; align: center" 
+                position="0 1.5 0"></a-entity>
+    </a-marker>
+    
+    <!-- Saturnus -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/saturn.glb"
+                scale="1.2 1.2 1.2"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 22000">
+      </a-entity>
+      <a-entity text="value: Saturnus; color: white; align: center" 
+                position="0 1.5 0"></a-entity>
+    </a-marker>
+    
+    <!-- Uranus -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/uranus.glb"
+                scale="1.0 1.0 1.0"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 25000">
+      </a-entity>
+      <a-entity text="value: Uranus; color: white; align: center" 
+                position="0 1.0 0"></a-entity>
+    </a-marker>
+    
+    <!-- Neptunus -->
+    <a-marker preset="hiro">
+      <a-entity gltf-model="https://github.com/IlhamFajriana/UAS_AVR/blob/c3ff5dfbb10329ee0b3d2523fde88e59dcf72e80/neptune.glb"
+                scale="0.9 0.9 0.9"
+                position="0 0 0"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 30000">
+      </a-entity>
+      <a-entity text="value: Neptunus; color: white; align: center" 
+                position="0 1.0 0"></a-entity>
+    </a-marker>
+
+    <!-- Kamera -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
